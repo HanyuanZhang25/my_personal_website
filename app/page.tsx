@@ -6,11 +6,13 @@ const publications = [
 
 export default function Home() {
   return <main className="page">
-    <header>
-      <h1>Hanyuan Zhang</h1>
-      <p className="role">M.S. Student in Machine Learning and Data Science</p>
-      <p>University of California San Diego</p>
-      <p className="contact"><a href="mailto:haz146@ucsd.edu">haz146@ucsd.edu</a><span>/</span><a href="https://www.linkedin.com/in/hanyuan-zhang-09a224380/" target="_blank" rel="noreferrer">LinkedIn</a><span>/</span><a href="https://github.com/HanyuanZhang25" target="_blank" rel="noreferrer">GitHub</a></p>
+    <header className="profile">
+      <div><h1>Hanyuan Zhang</h1>
+        <p className="role">M.S. Student in Machine Learning and Data Science</p>
+        <p>University of California San Diego</p>
+        <p className="contact"><a href="mailto:haz146@ucsd.edu">haz146@ucsd.edu</a><span>/</span><a href="https://www.linkedin.com/in/hanyuan-zhang-09a224380/" target="_blank" rel="noreferrer">LinkedIn</a><span>/</span><a href="https://github.com/HanyuanZhang25" target="_blank" rel="noreferrer">GitHub</a></p>
+      </div>
+      <img className="portrait" src="/hanyuan-zhang.jpg" alt="Portrait of Hanyuan Zhang" />
     </header>
 
     <section className="intro">
@@ -28,9 +30,10 @@ export default function Home() {
     <section>
       <h2>Research Experiences</h2>
       <div className="experience">
+        <article><h3>Research Assistant, UC San Diego <span>Mar. 2026 – Present</span></h3><p><strong>Scientific Knowledge Graphs: Research Map.</strong> Built a large-scale LLM pipeline that parses 311K+ PMC review articles covering 40M+ primary papers into approximately 1.9M question-level research narratives, linked into a multi-million-edge, LLM-verified knowledge graph of biomedical research.</p><p>Using this knowledge graph to trace evolutionary paths in medical research and help LLMs predict future biomedical research development.</p></article>
         <article><h3>Research Assistant, UC San Diego <span>Oct. 2025 – Jun. 2026</span></h3><p><strong>CT Open: Live Clinical Trial Outcome Prediction Benchmark.</strong> Co-developed a live, contamination-resistant benchmark for predicting clinical trial outcomes before public release. Built data curation, decontamination, verification, and leaderboard pipelines.</p></article>
         <article><h3>Research Assistant, UC San Diego <span>Oct. 2025 – Jun. 2026</span></h3><p><strong>DeepImagine: Counterfactual Clinical Trial Outcome Prediction.</strong> Contributed to a stepwise counterfactual method and evaluated its clinical trial prediction performance against RAG baselines.</p></article>
-        <article><h3>Research Leader, XJTLU <span>Oct. 2024 – May 2025</span></h3><p><strong>Ultrasound Image Recognition of Rare Thyroid Cancers.</strong> Led a hospital-collaborative study using ViT and MobileViT models for rare thyroid-cancer classification.</p></article>
+        <article><h3>Research Assistant, XJTLU <span>Oct. 2024 – May 2025</span></h3><p><strong>Ultrasound Image Recognition of Rare Thyroid Cancers.</strong> Led a hospital-collaborative study using ViT and MobileViT models for rare thyroid-cancer classification.</p></article>
         <article><h3>Research Assistant, XJTLU <span>Feb. 2023 – Dec. 2023</span></h3><p><strong>Non-Contrast Liver Tumor Segmentation.</strong> Implemented a wavelet-guided dual-encoder 3D Transformer for liver-tumor segmentation in PyTorch/MONAI.</p></article>
       </div>
     </section>
