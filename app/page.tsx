@@ -1,7 +1,7 @@
 const publications = [
-  { title: 'CT Open: An Open-Access, Uncontaminated, Live Platform for the Open Challenge of Clinical Trial Outcome Prediction', before: 'Jianyou Wang*, Youze Zheng*, Longtian Bao*, ', name: 'Hanyuan Zhang*', after: ', Qirui Zheng, Yuhan Chen, Yang Zhang, Matthew Feng, Maxim Khan, Aditya K. Sehgal, Christopher D. Rosin, Mohan Paturi, Umber Dube, Leon Bergen.', venue: 'Conference on Language Modeling (COLM), 2026.' },
-  { title: 'DeepImagine: Clinical Trial Outcome Prediction via Stepwise Local Counterfactual Imaginations', before: 'Youze Zheng*, Jianyou Wang*, Yuhan Chen*, Matthew Feng*, Longtian Bao, ', name: 'Hanyuan Zhang', after: ', Maxim Khan, Aditya K. Sehgal, Christopher D. Rosin, Umber Dube, Mohan Paturi.', venue: 'Under review at NeurIPS, 2026.' },
-  { title: 'Advancing Pharmacological Treatment Effectiveness with Dual-Encoder Model in Plain Scan Liver Tumors', before: 'Wen Sheng, Jun Zhao, Zhengdi Sima, Jiajun Liu, Han Lu, ', name: 'Hanyuan Zhang', after: ', Zhong Zheng, Zhihong Zhang, and Daoping Zhu.', venue: 'Indian Journal of Pharmaceutical Sciences, 2024.' },
+  { title: 'CT Open: An Open-Access, Uncontaminated, Live Platform for the Open Challenge of Clinical Trial Outcome Prediction', before: 'Jianyou Wang*, Youze Zheng*, Longtian Bao*, ', name: 'Hanyuan Zhang*', after: ', Qirui Zheng, Yuhan Chen, Yang Zhang, Matthew Feng, Maxim Khan, Aditya K. Sehgal, Christopher D. Rosin, Mohan Paturi, Umber Dube, Leon Bergen.', venue: 'Conference on Language Modeling (COLM), 2026.', url: 'https://arxiv.org/abs/2604.16742' },
+  { title: 'DeepImagine: Clinical Trial Outcome Prediction via Stepwise Local Counterfactual Imaginations', before: 'Youze Zheng*, Jianyou Wang*, Yuhan Chen*, Matthew Feng*, Longtian Bao, ', name: 'Hanyuan Zhang', after: ', Maxim Khan, Aditya K. Sehgal, Christopher D. Rosin, Umber Dube, Mohan Paturi.', venue: 'arXiv 2026.', url: 'https://arxiv.org/abs/2604.23054' },
+  { title: 'Advancing Pharmacological Treatment Effectiveness with Dual-Encoder Model in Plain Scan Liver Tumors', before: 'Wen Sheng, Jun Zhao, Zhengdi Sima, Jiajun Liu, Han Lu, ', name: 'Hanyuan Zhang', after: ', Zhong Zheng, Zhihong Zhang, and Daoping Zhu.', venue: 'Indian Journal of Pharmaceutical Sciences, 2024.', url: 'https://www.ijpsonline.com/abstract/advancing-pharmacological-treatment-effectiveness-with-dualencoder-model-in-plain-scan-liver-tumors-5548.html' },
 ];
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
     <section>
       <h2>Publications</h2>
       <p className="note">* indicates equal contribution.</p>
-      <div className="publication-list">{publications.map((paper) => <article className="publication" key={paper.title}><h3>{paper.title}</h3><p>{paper.before}<strong>{paper.name}</strong>{paper.after}</p><p><em>{paper.venue}</em></p></article>)}</div>
+      <div className="publication-list">{publications.map((paper) => <article className="publication" key={paper.title}><h3>{paper.title}</h3><p>{paper.before}<strong>{paper.name}</strong>{paper.after}</p><p><em>{paper.venue}</em> <a href={paper.url} target="_blank" rel="noreferrer">Paper</a></p></article>)}</div>
     </section>
 
     <section><h2>Skills</h2><p>Python, PyTorch, Clinical NLP, Computer Vision, SQL, Neo4j, Spark, Java, C#, MATLAB, Pandas, NumPy, Scikit-Learn, OpenCV</p></section>
