@@ -10,7 +10,7 @@ export default function Home() {
       <div><h1>Hanyuan Zhang</h1>
         <p className="role">M.S. Student in Machine Learning and Data Science</p>
         <p>University of California San Diego</p>
-        <p className="contact"><a href="mailto:haz146@ucsd.edu">haz146@ucsd.edu</a><span>/</span><a href="https://www.linkedin.com/in/hanyuan-zhang-09a224380/" target="_blank" rel="noreferrer">LinkedIn</a><span>/</span><a href="https://github.com/HanyuanZhang25" target="_blank" rel="noreferrer">GitHub</a></p>
+        <p className="contact"><a href="mailto:haz146@ucsd.edu">haz146@ucsd.edu</a><span>/</span><a href="https://www.linkedin.com/in/hanyuan-zhang-09a224380/" target="_blank" rel="noreferrer">LinkedIn</a><span>/</span><a href="https://github.com/HanyuanZhang25" target="_blank" rel="noreferrer">GitHub</a><span>/</span><a href="/Hanyuan_Zhang_CV.pdf" target="_blank" rel="noreferrer">CV</a></p>
       </div>
       <img className="portrait" src="/hanyuan-zhang.jpg" alt="Portrait of Hanyuan Zhang" />
     </header>
